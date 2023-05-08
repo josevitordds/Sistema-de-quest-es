@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Barlow+Condensed:wght@300&family=DynaPuff&family=Kanit:wght@300&family=Play&family=Roboto:wght@300&family=Sarabun:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #505050;
+}
+.container{
+    animation: inicializar .8s forwards;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#505050;
+}
+.container-top{
+    height: 38%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-dados{
+    width: 20%;
+    background-color: #202020;
+    height: 20vh;
+    margin: 0;
+    border: 1px solid;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 10px;
+
+}
+.container-center{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.bloco-aviso{
+    opacity: 0;
+    border: 1px solid black;
+    width: 50%;
+    height: 8.6vh;
+    background-color:firebrick;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card{
+    width:50%;
+    height: 100%;
+    background-color:#303030;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    color: white;
+    margin-right: 280px;
+}
+.container-login{
+    width: 100%;
+    height: 100%;
+    background-color: #505050;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-login{
+    width: 30%;
+    height:70vh;
+    background-color:#f2f2f2;
+    box-shadow: 6px 6px 12px black;
+}
+.card-login h1{
+    text-align:center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text-login input{
+    margin: 5px;
+    width: 60%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    outline: none;
+}
+.text-login button{
+    margin-top: 10px;
+    width: 60%;
+    padding: 12px;
+    background-color: rgb(0, 153, 255);
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.text-login button:hover{
+    transform: scale(1.04);
+}
+
+.card span{
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+.container-bottom{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.buttons button{
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 10%;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: #303030;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+}
+.container-bottom button:hover{
+    background-color:#121212;
+}
+.container-solucao{
+    animation: inicializar .8s forwards;
+    width: 60%;
+    height: 80vh;
+    background-color: white;
+    position: fixed;
+    display: none;
+    transition: .5s;
+   
+}
+.button-close{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.button-close button{
+    width: 10%;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: brown;
+    box-shadow: 1px 1px 1px black;
+}
+.content-solution{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.content-solution h2{
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container-solucao p{
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    text-align: justify;
+    padding: 60px;
+    font-size: 17px;
+}
+
+.bloco{
+    width: 50%;
+    height: 7.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:floralwhite;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px black;
+    margin: 5px;
+}
+.bloco:hover{
+    background-color: lightgrey;
+}
+.bloco:hover input{
+    background-color: lightgrey;
+}
+.bloco input{
+    width: 8%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+    background-color:floralwhite;
+    border: 0.5px solid black;
+
+}
+.bloco span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@media screen and (max-width: 700px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #505050;
+    }
+    .container{
+        animation: inicializar .8s forwards;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color:#505050;
+    }
+    .container-top{
+        margin-top: 20px;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card-dados{
+        width: 70%;
+        background-color: #202020;
+        height: 20vh;
+        border: 1px solid;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        border: 1px solid black;
+        font-size: 13px;
+    
+    }
+    .container-center{
+        width: 100%;
+        height: 6%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    
+    }
+    .bloco-aviso{
+        opacity: 0;
+        border: 1px solid black;
+        width: 70%;
+        height: 100%;
+        background-color:firebrick;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 12px;
+        margin: 0;
+    }
+    .card{
+        width:70%;
+        height: 100%;
+        background-color:#303030;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        color: white;
+        margin: 0;
+    }
+    .container-login{
+        width: 100%;
+        height: 100%;
+        background-color: #505050;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-login{
+        width: 70%;
+        height:50vh;
+        background-color:#f2f2f2;
+        box-shadow: 6px 6px 12px black;
+    }
+    .card-login h1{
+        text-align:center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .text-login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .text-login input{
+        margin: 5px;
+        width: 60%;
+        padding: 12px;
+        border: none;
+        border-bottom: 1px solid black;
+        background-color: transparent;
+        outline: none;
+    }
+    .text-login button{
+        margin-top: 10px;
+        width: 60%;
+        padding: 12px;
+        background-color: rgb(0, 153, 255);
+        border: none;
+        box-shadow: 1px 1px 1px black;
+        cursor: pointer;
+        transition: transform .3s;
+    }
+    .text-login button:hover{
+        transform: scale(1.04);
+    }
+    
+    .card span{
+        font-family: 'Kanit', sans-serif;
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+    }
+    .container-bottom{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+        
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .buttons button{
+        margin: 10px;
+        cursor: pointer;
+        width: 30%;
+        padding: 10px;
+        color: whitesmoke;
+        background-color: #303030;
+        border: none;
+        box-shadow: 1px 1px 1px black;
+        font-size: 11px;
+    }
+    .container-bottom button:hover{
+        background-color:#121212;
+    }
+    .container-solucao{
+        animation: inicializar .8s forwards;
+        width: 70%;
+        height: 80vh;
+        background-color: white;
+        position: fixed;
+        display: none;
+        transition: .5s;
+       
+    }
+    .button-close{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    .button-close button{
+        width: 30%;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+        background-color: brown;
+        box-shadow: 1px 1px 1px black;
+    }
+    .content-solution{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center; 
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .content-solution h2{
+        margin: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .container-solucao p{
+        font-family: 'roboto', sans-serif;
+        font-weight: 700;
+        text-align: justify;
+        padding: 60px;
+        font-size: 17px;
+    }
+    .container-solucao p>img{
+        width: 250px;
+        
+     
+    }
+    
+    .bloco{
+        width: 70%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color:floralwhite;
+        cursor: pointer;
+        box-shadow: 1px 1px 2px black;
+        margin: 3px;
+    }
+    .bloco:hover{
+        background-color: lightgrey;
+    }
+    .bloco:hover input{
+        background-color: lightgrey;
+    }
+    .bloco input{
+        width: 15%;
+        height: 100%;
+        padding: 10px;
+        margin-bottom: 4px;
+        margin-right: 4px;
+        cursor: pointer;
+        background-color:floralwhite;
+        border: 0.5px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .bloco span{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 12px;
+    }
+   
+
+}

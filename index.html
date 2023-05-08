@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="text-login">
+                    <input type="text" name="nome" id="nome" placeholder="seu nome">
+                    <input type="date" name="date" id="date" placeholder="seu aniversário">
+                    <button id="loginNext" onclick="doLogin()">Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-top">
+            <div class="card-dados">
+                <span id="score">0/10</span>
+                <span id="spanNome"></span>
+            </div>
+            <div class="card">
+                <span id="resultado"></span>
+            </div>
+        </div>
+        <div class="container-center">
+            <div class="bloco-aviso">
+                <span id="aviso-text"> Você infelizmente errou a questão</span>
+            </div>
+        </div>
+        <div class="container-solucao">
+            <div class="button-close">
+                <button id="close" onclick=" closeSolution()">close</button>
+            </div>
+            <div class="content-solution">
+                <h2>A solução é:</h2>
+                <p id="textSolution"><img class="img-solution" src="img/Captura de Tela (46).png" alt=""></p>
+            </div>
+        </div>
+        <div class="container-bottom">
+            <div class="bloco" onclick="buttonA()">
+                <input type="submit" name="qa" id="qa" value="A">
+                <span id="AA">11</span>
+
+            </div>
+            <div class="bloco" onclick="buttonB()">
+                <input type="submit" name="qb" id="qb" value="B">
+                <span id="AB">12</span>
+
+            </div>
+            <div class="bloco" onclick="buttonC()">
+                <input type="submit" name="qc" id="qc" value="C">
+                <span id="AC">13</span>
+
+            </div>
+            <div class="bloco" onclick="buttonD()">
+                <input type="submit" name="qd" id="qd" value="D">
+                <span id="AD">14</span>
+
+            </div>
+            <div class="bloco" onclick="buttonE()">
+                <input type="submit" name="qe" id="qe" value="E">
+                <span id="AE">15</span>
+
+            </div>
+            <div class="buttons">
+                <button onclick="getRandomElement()">Mudar questão</button>
+                <button onclick="showSolution()">Ver solução</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
