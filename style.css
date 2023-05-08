@@ -277,7 +277,7 @@ body{
         flex-direction: column;
     }
     .card-dados{
-        width: 70%;
+        width: 90%;
         background-color: #202020;
         height: 20vh;
         border: 1px solid;
@@ -304,7 +304,7 @@ body{
     .bloco-aviso{
         opacity: 0;
         border: 1px solid black;
-        width: 70%;
+        width: 90%;
         height: 100%;
         background-color:firebrick;
         color: white;
@@ -316,7 +316,7 @@ body{
         margin: 0;
     }
     .card{
-        width:70%;
+        width:90%;
         height: 100%;
         background-color:#303030;
         margin-top: 40px;
@@ -404,7 +404,7 @@ body{
     .buttons button{
         margin: 10px;
         cursor: pointer;
-        width: 30%;
+        width: 42%;
         padding: 10px;
         color: whitesmoke;
         background-color: #303030;
@@ -417,7 +417,7 @@ body{
     }
     .container-solucao{
         animation: inicializar .8s forwards;
-        width: 70%;
+        width: 90%;
         height: 80vh;
         background-color: white;
         position: fixed;
@@ -467,7 +467,7 @@ body{
     }
     
     .bloco{
-        width: 70%;
+        width: 90%;
         height: 5vh;
         display: flex;
         align-items: center;
